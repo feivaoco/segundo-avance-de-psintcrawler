@@ -122,7 +122,7 @@ FinFuncion
 //Inicio de la aventura
 Algoritmo PseCrawler
 	Definir vida, punt, op, nAl, eve, pocs, pocCur, pocsG, pocGCur, armd, ataq, nAl2, ataq_a_ene, ataqAcum, ataq_func,armd_func, protect Como Entero;
-	Definir calbrdano, vidcalbru Como Entero;
+	Definir caldano, vidcal Como Entero;
 	pocs = 5;
 	pocCur = 5;
 	pocsG = 3;
