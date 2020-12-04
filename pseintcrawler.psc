@@ -1,4 +1,4 @@
-//Genera el número para los eventos
+//Genera el nÃºmero para los eventos
 Funcion nAl <- Probs 
 	Definir nAl Como Entero;
 	nAl = Aleatorio(1, 1000);
@@ -9,19 +9,19 @@ Funcion pocs = funcion_pocs
 	Definir pocs, nAl Como entero;
 	nAl = Probs();
 	Si (nAl >= 1 y nAl <= 14)o(nAl >= 30 y nAl <= 50)o(nAl>= 76 y nAl <= 130)o(nAl >= 169 y nAl<=280) o (nAl >=496 y nAl <= 662) o (nAl >= 932 y nAl <= 986)
-		Escribir "Recibiste una poción";
+		Escribir "Recibiste una pociÃ³n";
 		pocs = pocs + 1;
 		Escribir "";
 	FinSi
 FinFuncion
 
-//Función aumentar pociones G
+//FunciÃ³n aumentar pociones G
 Funcion pocsG = funcion_pocsG
 	Definir pocsG, nAl, nAl2 Como entero;
 	nAl = Probs();
 	nAl2 = Aleatorio(1,1000);
 	Si (nAl2 >= nAl)o (nAl >= 970)
-		Escribir "Recibiste una poción G";
+		Escribir "Recibiste una pociÃ³n G";
 		pocsG = pocsG + 1;
 		Escribir "";
 	FinSi
@@ -35,61 +35,61 @@ Funcion eve = funcion_mago
 		thn = Aleatorio(1, 4);
 		nAl = Aleatorio(1, 50);
 		aInt = Aleatorio(2,8);
-		Escribir "Sientes un aura extraña proviniendo de las paredes...";
+		Escribir "Sientes un aura extraÃ±a proviniendo de las paredes...";
 		Esperar 3 Segundos;
 		Escribir "-Hoohoola, caballero. Soy un mago y vengo a jugar contigo";
 		Esperar thn Segundos;
-		Escribir "-Estoy pensando un númerito entre el 1 y el...";
+		Escribir "-Estoy pensando un nÃºmerito entre el 1 y el...";
 		Esperar thn Segundos;
-		Escribir "-50, si adivinas te daré un Reregalito";
+		Escribir "-50, si adivinas te darÃ© un Reregalito";
 		Escribir "-Pero cuentas con... hmmm..."; 
 		Esperar thn Segundos;
-		Escribir "-",aInt," intentos, así que, ¿quieres juegar conmigo?";
-		Escribir "1.- Sí";
+		Escribir "-",aInt," intentos, asÃ­ que, Â¿quieres juegar conmigo?";
+		Escribir "1.- SÃ­";
 		Escribir '2.- No";
 		Leer op;
 		Escribir "";
 		Si op = 1
-			Escribir "-Empezemos, ¡jijijijij!";
+			Escribir "-Empezemos, Â¡jijijijij!";
 			Repetir
 				aInt = aInt - 1;
 				Leer nAdiv;
 				Si nAdiv = nAl
-					Escribir "-¡Lo lograste, caballero! Toma esto como recompensa";
+					Escribir "-Â¡Lo lograste, caballero! Toma esto como recompensa";
 					eve = 1;
 				SiNo
 					Si nAdiv > nAl
-						Escribir "-¡Fallaste, muy para la derecha!";
+						Escribir "-Â¡Fallaste, muy para la derecha!";
 					SiNo
-						Escribir "-¡Fallaste, muy para la izquierda!';
+						Escribir "-Â¡Fallaste, muy para la izquierda!';
 					FinSi
 					Si aInt = 0
-						Escribir "-Ya no titienes intentos. Pero descuida, nos volveremos a encontrar, adiosito. ¡Jijijiji!";
+						Escribir "-Ya no titienes intentos. Pero descuida, nos volveremos a encontrar, adiosito. Â¡Jijijiji!";
 					sino
-						Escribir "-Uy, jijiji. Aún cuentas con ", aInt, " intentos, sigues en juego";
+						Escribir "-Uy, jijiji. AÃºn cuentas con ", aInt, " intentos, sigues en juego";
 					FinSi
 				FinSi
 			Hasta Que aInt = 0 o nAdiv = nAl
 			Escribir "";
 		SiNo
-			Escribir "-Está bien, cababallero, pero me verás de nuevo en algún momento";
+			Escribir "-EstÃ¡ bien, cababallero, pero me verÃ¡s de nuevo en algÃºn momento";
 			eve = punt + 5;
 		FinSi
 	FinSi
 FinFuncion
 
-//Función aumentar ataque
+//FunciÃ³n aumentar ataque
 Funcion ataq_func = ataq_funcion
 	Definir nAl, nAl2, ataq_func Como entero;
 	nAl = probs();
 	nAl2 = Aleatorio(1,20000);
 	Si (nAl2 > nAl) o (nAl2 > 1420 y nAl2 < 1669)
 		ataq_func = Aleatorio(2,4);
-		Escribir "Se aumentaron ", ataq_func, " puntos de daño";
+		Escribir "Se aumentaron ", ataq_func, " puntos de daÃ±o";
 	FinSi
 FinFuncion
 
-//Función aumentar armadura
+//FunciÃ³n aumentar armadura
 Funcion armd_func = subir_arm()
 	Definir nAl, nAl2, armd_func Como Entero;
 	nAl = probs();
@@ -104,7 +104,7 @@ FinFuncion
 
 
 
-//Función cuando ataques
+//FunciÃ³n cuando ataques
 Funcion ataq_a_ene = ataq_en_pelea()
 	Definir ataq_a_ene como entero;
 	ataq_a_ene = Aleatorio(-3,2);
@@ -133,19 +133,19 @@ Algoritmo PseCrawler
 	ataq = 5;
 	Escribir "Instrucciones: Escribe el numero que se indique en la consola para interactuar.";
 	Escribir "";
-	Escribir "Eres un caballero atrapado en una mazmorra, camina hacía tu dirección preferida para terminar tu aventura.";
+	Escribir "Eres un caballero atrapado en una mazmorra, camina hacÃ­a tu direcciÃ³n preferida para terminar tu aventura.";
 	Escribir "";
 	Esperar 2 Segundos;
 	Repetir
 		
 		eve = 0;
 		Escribir "";
-		Escribir "¿Qué hacer?';
+		Escribir "Â¿QuÃ© hacer?';
 		Escribir '1.- Caminar';
 		Escribir '2.- Revisar inventario';
 		Escribir '3.- Revisar puntaje";
 		Si punt >= 100
-			Escribir "4.- Enfrentarse al Dragón";
+			Escribir "4.- Enfrentarse al DragÃ³n";
 		FinSi
 		Escribir "";
 		Leer op;
@@ -201,8 +201,8 @@ Algoritmo PseCrawler
 						nAl = Aleatorio(0,1000);
 						Si (nAl > 100 y nAl < 200) o (nAl > 460 y nAl < 540) o (nAl > 780 y nAl < 900)
 							Escribir "";
-							Escribir "Encontraste un cofre, ¿deseas abrirlo?";
-							Escribir "1.- Sí";
+							Escribir "Encontraste un cofre, Â¿deseas abrirlo?";
+							Escribir "1.- SÃ­";
 							Escribir "2.- No";
 							Leer op;
 							Segun op 
@@ -234,7 +234,7 @@ Algoritmo PseCrawler
 								protect = vida + armd;
 								caldano = Aleatorio(4,9);
 								Escribir "";
-								Escribir "¿Qué hacer?";
+								Escribir "Â¿QuÃ© hacer?";
 								Escribir "1.- Atacar";
 								Escribir "2.- Revisar inventario";
 								leer op;
@@ -242,8 +242,8 @@ Algoritmo PseCrawler
 									1:
 										
 										ataq_a_ene = ataq_en_pelea();
-										vidcalbru = vidcalbru - (ataq_a_ene + ataq);
-										Escribir "Hiciste ", ataq_a_ene + ataq, " de ataque, la calaca ahora tiene ", vidcalbru " de vida";
+										vidcalbru = vidcal - (ataq_a_ene + ataq);
+										Escribir "Hiciste ", ataq_a_ene + ataq, " de ataque, la calaca ahora tiene ", vidcal, " de vida";
 										
 									2:
 										Escribir "Cuentas con: ";
@@ -253,14 +253,14 @@ Algoritmo PseCrawler
 										Escribir pocs, " pociones";
 										Escribir pocsG, " pociones G";
 										Escribir "";
-										Escribir "1.- Beber alguna poción";
+										Escribir "1.- Beber alguna pociÃ³n";
 										Escribir "2.- Salir de inventario";
 										Leer op;
 										Si op = 1
 											Repetir
 												Escribir "";
-												Escribir "1.- Beber poción";
-												Escribir "2.- Beber poción G";
+												Escribir "1.- Beber pociÃ³n";
+												Escribir "2.- Beber pociÃ³n G";
 												Escribir "3.- Salir de inventario";
 												Escribir "";
 												Leer op;
@@ -289,7 +289,7 @@ Algoritmo PseCrawler
 								FinSegun
 								Si vidcalbru > 0
 									Si armd > 0
-										armd = armd - calbrdano;
+										armd = armd - caldano;
 										si armd < 0 
 											armd = 0;
 										FinSi
@@ -297,16 +297,16 @@ Algoritmo PseCrawler
 									
 									Si protect <= vida
 										vida = vida - calbrdano;
-										Escribir "Te golpeó la calaca, recibiste ", calbrdano, " de daño";
+										Escribir "Te golpeÃ³ la calaca, recibiste ", caldano, " de daÃ±o";
 										Escribir "Ahora cuentas con ", vida, " de vida";
 									SiNo
 										protect = protect - calbrdano;
-										Escribir "Te golpeó la calaca, recibiste ", calbrdano, " de daño";
+										Escribir "Te golpeÃ³ la calaca, recibiste ", caldano, " de daÃ±o";
 										Si protect <= vida
-											Escribir "¡Se rompió tu armadura!";
+											Escribir "Â¡Se rompiÃ³ tu armadura!";
 											vida = protect;
 										SiNo
-											Escribir "Aún cuentas con ", armd, " de armadura";
+											Escribir "AÃºn cuentas con ", armd, " de armadura";
 										FinSi
 									FinSi
 								FinSi	
@@ -338,14 +338,14 @@ Algoritmo PseCrawler
 				Escribir pocs, " pociones";
 				Escribir pocsG, " pociones G";
 				Escribir "";
-				Escribir "1.- Beber alguna poción";
+				Escribir "1.- Beber alguna pociÃ³n";
 				Escribir "2.- Salir de inventario";
 				Leer op;
 				Si op = 1
 					Repetir
 						Escribir "";
-						Escribir "1.- Beber poción";
-						Escribir "2.- Beber poción G";
+						Escribir "1.- Beber pociÃ³n";
+						Escribir "2.- Beber pociÃ³n G";
 						Escribir "3.- Salir de inventario";
 						Escribir "";
 						Leer op;
@@ -374,12 +374,12 @@ Algoritmo PseCrawler
 			3:
 				Escribir "Tu puntaje es de ", punt, " puntos";
 				Si punt >= 75
-					Escribir "Ya casi llegas con el Dragón";
+					Escribir "Ya casi llegas con el DragÃ³n";
 				SiNo
 					Si punt >= 45
-						Escribir "Aún falta para llegar con el Dragón';
+						Escribir "AÃºn falta para llegar con el DragÃ³n';
 					SiNo
-						Escribir "Te falta mucho para llegar con el Dragón";
+						Escribir "Te falta mucho para llegar con el DragÃ³n";
 					FinSi
 				FinSi
 				
